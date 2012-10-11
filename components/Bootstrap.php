@@ -31,7 +31,7 @@ class Bootstrap extends CApplicationComponent
 	 * @var boolean whether to register the Bootstrap core CSS (bootstrap.min.css).
 	 * Defaults to true.
 	 */
-	public $coreCss = true;
+	public $coreCss = false;
 	/**
 	 * @var boolean whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css).
 	 * Defaults to false.
@@ -41,12 +41,12 @@ class Bootstrap extends CApplicationComponent
 	 * @var boolean whether to register the Yii-specific CSS missing from Bootstrap.
 	 * @since 0.9.12
 	 */
-	public $yiiCss = true;
+	public $yiiCss = false; // Use Normal Bootstrap
 	/**
 	 * @var boolean whether to register jQuery and the Bootstrap JavaScript.
 	 * @since 0.9.10
 	 */
-	public $enableJS = true;
+	public $enableJS = false;
 	/**
 	 * @var array plugin initial options (name=>options).
 	 * Each array key-value pair represents the initial options for a single plugin class,
